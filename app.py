@@ -53,8 +53,6 @@ def get_prediction():
     features = [sepal_length,petal_length]
     
     print(features)
-    with open('model.pkl',"rb") as picklefile:
-        model = pickle.load(picklefile)
     print(model)
     predicted_class = int(model.predict(features))
     
